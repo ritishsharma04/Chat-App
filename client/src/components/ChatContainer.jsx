@@ -40,7 +40,6 @@ const ChatContainer = () => {
   }, [selectedUser]);
 
   useLayoutEffect(() => {
-    console.log(scrollEnd.current);
     if (scrollEnd.current && messages) {
       scrollEnd.current.scrollIntoView({ behavior: "smooth" });
     }
